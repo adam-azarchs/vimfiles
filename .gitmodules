@@ -1,0 +1,9 @@
+[submodule "pack/plugins/start/vim-maktaba"]
+	path = pack/plugins/start/vim-maktaba
+	url = https://github.com/google/vim-maktaba.git
+[submodule "pack/plugins/start/vim-codefmt"]
+	path = pack/plugins/start/vim-codefmt
+	url = https://github.com/google/vim-codefmt.git
+[submodule "pack/plugins/start/vim-go"]
+	path = pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go.git
