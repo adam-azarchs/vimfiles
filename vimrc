@@ -1,22 +1,22 @@
 set nocompatible
-set bs
-filetype off
+set bs=2
 
 set shiftwidth=4
 set expandtab
 set tabstop=4
 set ruler
+set guifont=Go\ Mono:h12
 
 let g:ycm_python_binary_path = 'python'
 set background=dark
 colo darkblue
 setlocal spell spelllang=en_us
 set nospell
+syntax enable
 set mousemodel=popup_setpos
 filetype plugin on
-filetype indent on
 filetype plugin indent on
-syntax on
+filetype indent on
 set nobackup
 set writebackup
 let g:ycm_key_list_select_completion = ['<TAB>']
