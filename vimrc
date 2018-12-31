@@ -41,3 +41,7 @@ augroup autoformat_settings
   " autocmd FileType python AutoFormatBuffer yapf
   autocmd FileType python AutoFormatBuffer autopep8
 augroup END
+
+" Workaround for https://github.com/google/vim-maktaba/issues/215
+packloadall
+call maktaba#syscall#SetUsableShellRegex('\v^/bin/sh|cmd|cmd\.exe|powershell|powershell\.exe|command\.com$')
