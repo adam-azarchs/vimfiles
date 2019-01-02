@@ -1,5 +1,6 @@
 set nocompatible
 set bs=2
+filetype off
 
 set shiftwidth=4
 set expandtab
@@ -8,15 +9,17 @@ set ruler
 set guifont=Go\ Mono:h12
 
 let g:ycm_python_binary_path = 'python'
+" Reopen files in history at the last open line.
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 set background=dark
-colo darkblue
+colo desert
 setlocal spell spelllang=en_us
 set nospell
-syntax enable
 set mousemodel=popup_setpos
 filetype plugin on
-filetype plugin indent on
 filetype indent on
+filetype plugin indent on
+syntax on
 set nobackup
 set writebackup
 let g:ycm_key_list_select_completion = ['<TAB>']
@@ -29,6 +32,7 @@ autocmd FileType cc         setlocal shiftwidth=2 tabstop=2
 autocmd FileType md         setlocal spell
 
 autocmd FileType c,cc,cpp,go,md,proto,html,javascript setlocal fileencoding=utf-8
+autocmd BufNewFile,BufRead BUILD,BUILD.bazel,*.bzl,WORKSPACE,WORKSPACE.bazel :setfiletype bzl
 
 augroup autoformat_settings
   " autocmd FileType bzl AutoFormatBuffer buildifier
