@@ -7,6 +7,7 @@ set expandtab
 set tabstop=4
 set ruler
 set guifont=Go\ Mono:h12
+set encoding=utf-8
 
 let g:ycm_python_binary_path = 'python'
 " Reopen files in history at the last open line.
