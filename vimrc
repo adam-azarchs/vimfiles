@@ -2,6 +2,7 @@ set nocompatible
 set bs=2
 filetype off
 
+set hlsearch
 set shiftwidth=4
 set expandtab
 set tabstop=4
