@@ -50,7 +50,7 @@ augroup autoformat_settings
 augroup END
 
 " Workaround for https://github.com/google/vim-maktaba/issues/215
-" packloadall
-" call maktaba#syscall#SetUsableShellRegex('\v^/bin/sh|cmd|cmd\.exe|powershell|powershell\.exe|command\.com$')
+packloadall
+call maktaba#syscall#SetUsableShellRegex('\v^/bin/sh|cmd|cmd\.exe|powershell|powershell\.exe|command\.com$')
 
 autocmd BufRead *.* :syntax sync fromstart
