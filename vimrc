@@ -28,6 +28,8 @@ set writebackup
 let g:ycm_key_list_select_completion = ['<TAB>']
 let g:ycm_key_list_previous_completion = ['<S-TAB>']
 let g:ycm_key_list_stop_completion = ['<C-y>', '<Enter>']
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 autocmd FileType html       setlocal shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
