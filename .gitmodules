@@ -10,3 +10,6 @@
 [submodule "pack/plugins/start/YouCompleteMe"]
 	path = pack/plugins/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "pack/plugins/start/vim-glaive"]
+	path = pack/plugins/start/vim-glaive
+	url = https://github.com/google/vim-glaive.git
