@@ -9,6 +9,7 @@ set tabstop=4
 set ruler
 set guifont=Go\ Mono:h12
 set encoding=utf-8
+set visualbell
 
 let g:ycm_python_binary_path = 'python'
 " Reopen files in history at the last open line.
@@ -45,12 +46,9 @@ augroup autoformat_settings
   " autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
   " autocmd FileType dart AutoFormatBuffer dartfmt
   autocmd FileType go AutoFormatBuffer gofmt
-  " autocmd FileType gn AutoFormatBuffer gn
   " autocmd FileType html,css,json AutoFormatBuffer js-beautify
   " autocmd FileType java AutoFormatBuffer google-java-format
   autocmd FileType python AutoFormatBuffer black
-  autocmd FileType python Glaive codefmt black_executable='/mnt/park1/compbio/jedna/bin/black'
-  " autocmd FileType python AutoFormatBuffer autopep8
 augroup END
 
 " Workaround for https://github.com/google/vim-maktaba/issues/215
