@@ -43,6 +43,7 @@ autocmd BufNewFile,BufRead BUILD,*.bazel,*.bzl,WORKSPACE :setfiletype bzl
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
   autocmd FileType BUILD,BUILD.bazel,WORKSPACE,WORKSPACE.bazel AutoFormatBuffer buildifier
+  autocmd FileType proto AutoFormatBuffer clang-format
   " autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
   " autocmd FileType dart AutoFormatBuffer dartfmt
   autocmd FileType go AutoFormatBuffer gofmt
